@@ -3,6 +3,7 @@
 [![GitHub issues](https://img.shields.io/github/issues/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/issues)
 [![GitHub forks](https://img.shields.io/github/forks/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/network)
 [![GitHub stars](https://img.shields.io/github/stars/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/stargazers)
+[![GitHub license](https://img.shields.io/github/license/moulibheemaneti/mb_contact_form?label=license)](https://github.com/moulibheemaneti/mb_contact_form/blob/master/LICENSE)
 
 ## Table of contents
 * [General info](#general-info)
