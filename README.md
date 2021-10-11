@@ -55,4 +55,4 @@ This is not the last package from this developer. Maybe this solely can't be upd
 	* [Youtube](https://www.youtube.com/bemouli)
 
 ## Other packages by this developer
-* [MB Button](https://pub.dev/packages/mb_contact_form)
+* [MB Button](https://pub.dev/packages/mb_button)
