@@ -1,5 +1,6 @@
 /// Copyright 2021
 /// Author : Mouli Bheemaneti
+
 library mb_contact_form;
 
 import 'package:flutter/material.dart';
@@ -65,12 +66,6 @@ class _MBContactFormState extends State<MBContactForm> {
   /// [message] store the value from [_messageEditingController]
   /// And it is validated by [_validateMessage]
   String message = '';
-
-  /// Overrides the parent's [initState] method.
-  @override
-  void initState() {
-    super.initState();
-  }
 
   /// Overrides the parent's [dispose] method.
   ///
@@ -151,7 +146,8 @@ class _MBContactFormState extends State<MBContactForm> {
       }),
     );
 
-    launch(emailLaunchUri.toString());
+    // Launching the URL.
+    launchUrl(emailLaunchUri);
   }
 
   @override
