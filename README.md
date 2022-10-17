@@ -13,7 +13,7 @@
 * [Meet the developer](#meet-the-developer)
 
 ## General info
-**mb_contact_form** is a third party flutter package. This is a simple version of Contact Form. This can be easily added to your flutter projects. This make your works simpler and your code shorter. This is recently updated and has null safety too. 
+**mb_contact_form** is a flutter package. This is a simple version of Contact Form. This can be easily added to your flutter projects. This make your works simpler and your code shorter. This is recently updated and has null safety too. 
 	
 ## Setup
 These are the steps on how to use this package.
@@ -27,7 +27,7 @@ $ flutter pub add mb_contact_form
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 ```yaml
 dependencies:
-  mb_contact_form: ^0.0.1 #check for latest in versions at https://pub.dev/packages/mb_contact_form/versions
+  mb_contact_form: ^0.0.2 #check for latest in versions at https://pub.dev/packages/mb_contact_form/versions
 ```
 Alternatively, your editor might support or flutter pub get. Check the docs for your editor to learn more.
 
