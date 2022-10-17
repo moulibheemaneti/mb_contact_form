@@ -1,16 +1,17 @@
-/// Ensure you use the below two packages in the file which you are working on
 import 'package:flutter/material.dart';
 import 'package:mb_contact_form/mb_contact_form.dart';
 
+/// Entry point of the app.
 void main() {
   runApp(const MyApp());
 }
 
+/// Base class for the app.
 class MyApp extends StatefulWidget {
   const MyApp({Key? key}) : super(key: key);
 
   @override
-  _MyAppState createState() => _MyAppState();
+  State<MyApp> createState() => _MyAppState();
 }
 
 class _MyAppState extends State<MyApp> {
