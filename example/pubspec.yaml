@@ -1,13 +1,10 @@
 name: example
-
-description: A new Flutter project.
-
-publish_to: 'none' 
-
+description: "An example project for the mb_contact_form package."
+publish_to: 'none'
 version: 1.0.0+1
 
 environment:
-  sdk: '>=2.18.2 <3.0.0'
+  sdk: ^3.10.8
 
 dependencies:
   flutter:
@@ -16,7 +13,9 @@ dependencies:
     path: ../
 
 dev_dependencies:
-  flutter_lints: ^2.0.0
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true

@@ -2,26 +2,25 @@ name: mb_contact_form
 
 description: A simple contact form developed in Flutter by Mouli Bheemaneti.
 
-version: 0.0.2
+version: 1.0.0
 
 #author: Mouli Bheemaneti <moulibheemaneti99@gmail.com>
 
 homepage: https://github.com/moulibheemaneti/mb_contact_form.git
 
 environment:
-  sdk: ">=2.18.2 <3.0.0"
-  flutter: ">=3.0.0"
+  sdk: ^3.10.8
 
 dependencies:
   flutter:
     sdk: flutter
 
-  mb_button: ^1.0.5
+  mb_button: ^3.0.2
 
-  url_launcher: ^6.1.6
+  url_launcher: ^6.3.2
 
 dev_dependencies:
-  flutter_lints: ^1.0.0
+  flutter_lints: ^6.0.0
 
 flutter:
   uses-material-design: true

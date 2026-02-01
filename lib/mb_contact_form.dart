@@ -28,13 +28,13 @@ class MBContactForm extends StatefulWidget {
   /// [Message] and a submit [Button]
   final bool hasHeading;
 
-  /// [MBContactForm] has 2 [required] fields [withIcons] and [destinationEmail].
+  /// [MBContactForm] has 2 required fields [withIcons] and [destinationEmail].
   const MBContactForm({
-    Key? key,
+    super.key,
     this.hasHeading = true,
     required this.withIcons,
     required this.destinationEmail,
-  }) : super(key: key);
+  });
 
   @override
   State<MBContactForm> createState() => _MBContactFormState();
