@@ -27,7 +27,7 @@ $ flutter pub add mb_contact_form
 This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
 ```yaml
 dependencies:
-  mb_contact_form: ^0.0.2 #check for latest in versions at https://pub.dev/packages/mb_contact_form/versions
+  mb_contact_form: ^3.0.0 #check for latest in versions at https://pub.dev/packages/mb_contact_form/versions
 ```
 Alternatively, your editor might support or flutter pub get. Check the docs for your editor to learn more.
 
@@ -46,13 +46,10 @@ This is not the last package from this developer. Maybe this solely can't be upd
 * [MB ContactForm Release Notes](https://pub.dev/packages/mb_contact_form/changelog)
 
 ## Meet the developer
-**Mouli Bheemaneti** is the developer behind this [mb_contact_form](https://pub.dev/packages/mb_contact_form) package. I'm ambitious and driven towards developing new apps and packages.
-* [Mouli Bheemaneti](https://www.moulibheemaneti.com)
-	* [Play Store](https://play.google.com/store/apps/dev?id=5025838786028729109)
-	* [Github](https://www.github.com/moulibheemaneti)
-	* [Behance](https://www.behance.com/moulibheemaneti)
-	* [Instagram](https://www.instagram.com/mouli.bheemaneti)
-	* [Youtube](https://www.youtube.com/bemouli)
+**Mouli Bheemaneti** is the developer behind this [mb_button](https://pub.dev/packages/mb_button) package. I'm ambitious and driven towards developing new apps and packages.
+* [Mouli Bheemaneti](https://developer.moulibheemaneti.com) 
+	* [Github](https://www.github.com/moulibheemaneti)  
+	* [Behance](https://www.behance.com/moulibheemaneti)  
 
 ## Other packages by this developer
 * [MB Button](https://pub.dev/packages/mb_button)

@@ -8,7 +8,7 @@ void main() {
 
 /// Base class for the app.
 class MyApp extends StatefulWidget {
-  const MyApp({Key? key}) : super(key: key);
+  const MyApp({super.key});
 
   @override
   State<MyApp> createState() => _MyAppState();
@@ -17,15 +17,18 @@ class MyApp extends StatefulWidget {
 class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text("MB Contact Form Demo"),
-        elevation: 0,
-      ),
-      body: const MBContactForm(
-        hasHeading: true,
-        withIcons: false,
-        destinationEmail: "email@gmail.com",
+    return MaterialApp(
+      title: "MB Contact Form Demo",
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text("MB Contact Form Demo"),
+          elevation: 0,
+        ),
+        body: const MBContactForm(
+          hasHeading: true,
+          withIcons: false,
+          destinationEmail: "email@gmail.com",
+        ),
       ),
     );
   }
