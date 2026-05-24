@@ -1,10 +1,10 @@
 name: example
 description: "An example project for the mb_contact_form package."
 publish_to: 'none'
-version: 1.0.0+1
+version: 1.0.1+2
 
 environment:
-  sdk: ^3.10.8
+  sdk: ^3.12.0
 
 dependencies:
   flutter:

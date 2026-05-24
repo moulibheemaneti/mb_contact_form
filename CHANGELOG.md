@@ -4,7 +4,11 @@
 
 ## Current release
 
-## [1.0.0] - 07 February 2025
+## [1.0.1] - 24 May 2026
+### Release Notes:
+* Upgrade flutter version to 3.44.0
+
+## [1.0.0] - 07 February 2026
 ### Release Notes:
 * Stable release 1.0.0.
 * Migrated to support Dart SDK >= 3.10.8.
