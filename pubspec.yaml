@@ -1,6 +1,6 @@
 name: mb_contact_form
 description: A plug-and-play Flutter contact form widget with name, email, and message fields, built-in validation, and native mail app integration.
-version: 1.1.1
+version: 1.1.2
 
 repository: https://github.com/moulibheemaneti/mb_contact_form
 homepage: https://github.com/moulibheemaneti/mb_contact_form

@@ -4,6 +4,13 @@
 
 ## Current release
 
+## [1.1.2](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.1...mb_contact_form-v1.1.2) (2026-06-25)
+
+
+### Documentation
+
+* resolve pubspec conflict and bump version to 1.1.1 ([9a98a1a](https://github.com/moulibheemaneti/mb_contact_form/commit/9a98a1a4e5a39d2c62388a8b44729cf5ee1e7380))
+
 ## [1.1.1](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.0...mb_contact_form-v1.1.1) (2026-06-25)
 
 
