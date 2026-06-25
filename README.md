@@ -1,55 +1,100 @@
-# MBContactForm (mb_contact_form)
+<div align="center">
 
-[![GitHub issues](https://img.shields.io/github/issues/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/issues)
-[![GitHub forks](https://img.shields.io/github/forks/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/network)
-[![GitHub stars](https://img.shields.io/github/stars/moulibheemaneti/mb_contact_form)](https://github.com/moulibheemaneti/mb_contact_form/stargazers)
-[![GitHub license](https://img.shields.io/github/license/moulibheemaneti/mb_contact_form?label=license)](https://github.com/moulibheemaneti/mb_contact_form/blob/master/LICENSE)
+# mb_contact_form
 
-## Table of contents
-* [General info](#general-info)
-* [Setup](#setup)
-* [Conclusion](#conclusion)
-* [Useful Resources](#useful-resources)
-* [Meet the developer](#meet-the-developer)
+**A plug-and-play contact form widget for Flutter — name, email, and message with built-in validation.**
 
-## General info
-**mb_contact_form** is a flutter package. This is a simple version of Contact Form. This can be easily added to your flutter projects. This make your works simpler and your code shorter. This is recently updated and has null safety too. 
-	
-## Setup
-These are the steps on how to use this package.
+[![pub version](https://img.shields.io/pub/v/mb_contact_form.svg?style=flat-square&color=0175C2&labelColor=1a1a2e)](https://pub.dev/packages/mb_contact_form)
+[![pub points](https://img.shields.io/pub/points/mb_contact_form?style=flat-square&color=0175C2&labelColor=1a1a2e)](https://pub.dev/packages/mb_contact_form/score)
+[![license](https://img.shields.io/badge/license-MIT-0175C2?style=flat-square&labelColor=1a1a2e)](LICENSE)
+[![flutter](https://img.shields.io/badge/flutter-%3E%3D3.x-0175C2?style=flat-square&labelColor=1a1a2e)](https://flutter.dev)
 
-#### Run this command:
+Drop-in contact form with name, email, and message fields. Validates input and opens the device mail app with a pre-filled message on submit — no backend required.
+
+</div>
+
+---
+
+## Features
 
 ```
-$ flutter pub add mb_contact_form
+✦ Name, email, and message fields with built-in validation
+✦ Opens native mail app on submit — no backend or API keys needed
+✦ Optional icons on each field
+✦ Optional "Contact Form" heading
+✦ Works on Android, iOS, web, and desktop
 ```
 
-This will add a line like this to your package's pubspec.yaml (and run an implicit flutter pub get):
+---
+
+## Installation
+
+Add to your `pubspec.yaml`:
+
 ```yaml
 dependencies:
-  mb_contact_form: ^3.0.0 #check for latest in versions at https://pub.dev/packages/mb_contact_form/versions
+  mb_contact_form: ^1.0.2
 ```
-Alternatively, your editor might support or flutter pub get. Check the docs for your editor to learn more.
 
-#### Import it
-Now in your Dart code, you can use:
+Then run:
+
+```sh
+flutter pub get
+```
+
+---
+
+## Usage
+
 ```dart
-import 'package:mb_button/mb_contact_form.dart';
+import 'package:mb_contact_form/mb_contact_form.dart';
+
+MBContactForm(
+  destinationEmail: 'you@example.com',
+  withIcons: true,
+  hasHeading: true,
+)
 ```
 
-## Conclusion
-This is not the last package from this developer. Maybe this solely can't be updated frequently but still it is worth using this package. This helps to reduce your code lines.
+Place it anywhere in your widget tree — inside a `Scaffold`, a `Column`, a modal sheet, wherever fits.
 
-## Useful Resources
-* [MB ContactForm Example](https://pub.dev/packages/mb_contact_form/example)
-* [MB ContactForm Installing Guide](https://pub.dev/packages/mb_contact_form/install)
-* [MB ContactForm Release Notes](https://pub.dev/packages/mb_contact_form/changelog)
+---
 
-## Meet the developer
-**Mouli Bheemaneti** is the developer behind this [mb_button](https://pub.dev/packages/mb_button) package. I'm ambitious and driven towards developing new apps and packages.
-* [Mouli Bheemaneti](https://developer.moulibheemaneti.com) 
-	* [Github](https://www.github.com/moulibheemaneti)  
-	* [Behance](https://www.behance.com/moulibheemaneti)  
+## Parameters
 
-## Other packages by this developer
-* [MB Button](https://pub.dev/packages/mb_button)
+| Parameter | Type | Default | Description |
+|---|---|---|---|
+| `destinationEmail` | `String` | required | Email address that receives the submitted message |
+| `withIcons` | `bool` | required | Show icons next to each field |
+| `hasHeading` | `bool` | `true` | Show "Contact Form" heading at the top of the card |
+
+---
+
+## How It Works
+
+When the user taps **Submit**:
+
+1. All fields are validated — name (first + last), email format, non-empty message.
+2. A `mailto:` URI is built with subject `Feedback from <name>` and the body set to the message.
+3. The device's default mail app opens with everything pre-filled.
+
+```
+user fills form → taps Submit → validation passes
+    └── mailto: URI constructed
+            └── native mail app opens, pre-filled ✅
+```
+
+---
+
+## Contributing
+
+Contributions are welcome! Please follow the [conventional commits](https://www.conventionalcommits.org/) format when committing.
+
+---
+
+<div align="center">
+
+Made with 🎯 by [@moulibheemaneti](https://github.com/moulibheemaneti)  
+MIT License
+
+</div>
