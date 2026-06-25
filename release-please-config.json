@@ -1,0 +1,22 @@
+{
+	"$schema": "https://raw.githubusercontent.com/googleapis/release-please/main/schemas/config.json",
+	"packages": {
+		".": {
+			"release-type": "dart",
+			"package-name": "mb_contact_form",
+			"include-component-in-tag": true,
+			"changelog-path": "CHANGELOG.md",
+			"changelog-sections": [
+				{ "type": "feat", "section": "Features" },
+				{ "type": "fix", "section": "Bug Fixes" },
+				{ "type": "perf", "section": "Performance" },
+				{ "type": "refactor", "section": "Refactors" },
+				{ "type": "chore", "section": "Miscellaneous" },
+				{ "type": "docs", "section": "Documentation" },
+				{ "type": "ci", "section": "CI" },
+				{ "type": "test", "section": "Tests", "hidden": true },
+				{ "type": "build", "section": "Build", "hidden": true }
+			]
+		}
+	}
+}
