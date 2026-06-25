@@ -4,6 +4,10 @@
 
 ## Current release
 
+## [1.0.2] - 25 Jun 2026
+### Release Notes:
+* Upgrade flutter version to 3.44.4
+
 ## [1.0.1] - 24 May 2026
 ### Release Notes:
 * Upgrade flutter version to 3.44.0
