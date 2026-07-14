@@ -4,6 +4,13 @@
 
 ## Current release
 
+## [1.1.3](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.2...mb_contact_form-v1.1.3) (2026-07-14)
+
+
+### Features
+
+* upgrade flutter sdk to 3.44.6 ([#10](https://github.com/moulibheemaneti/mb_contact_form/issues/10)) ([2981281](https://github.com/moulibheemaneti/mb_contact_form/commit/29812814ec75bd291db92ab3a52a7e70dde8d1a6))
+
 ## [1.1.2](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.1...mb_contact_form-v1.1.2) (2026-06-25)
 
 
