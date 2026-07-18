@@ -4,6 +4,13 @@
 
 ## Current release
 
+## [1.1.4](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.3...mb_contact_form-v1.1.4) (2026-07-18)
+
+
+### Bug Fixes
+
+* **ci:** update renovate github action to v46.1.19 ([#12](https://github.com/moulibheemaneti/mb_contact_form/issues/12)) ([b1edd5d](https://github.com/moulibheemaneti/mb_contact_form/commit/b1edd5d3f79fe0f7112a477704e4fa11d8b3ee3f))
+
 ## [1.1.3](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.2...mb_contact_form-v1.1.3) (2026-07-14)
 
 
