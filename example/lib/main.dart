@@ -20,10 +20,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       title: "MB Contact Form Demo",
       home: Scaffold(
-        appBar: AppBar(
-          title: const Text("MB Contact Form Demo"),
-          elevation: 0,
-        ),
+        appBar: AppBar(title: const Text("MB Contact Form Demo"), elevation: 0),
         body: const MBContactForm(
           hasHeading: true,
           withIcons: false,
