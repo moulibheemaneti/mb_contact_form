@@ -1,7 +1,7 @@
 /// Copyright 2021
 /// Author : Mouli Bheemaneti
 
-library mb_contact_form;
+library;
 
 import 'package:flutter/material.dart';
 import 'package:mb_button/mb_button.dart';
