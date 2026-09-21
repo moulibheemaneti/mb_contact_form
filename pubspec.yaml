@@ -19,7 +19,6 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  mb_button: ^3.0.3
   url_launcher: ^6.3.2
 
 dev_dependencies:
