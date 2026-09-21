@@ -4,6 +4,13 @@
 
 ## Current release
 
+## [1.3.0](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.2.0...mb_contact_form-v1.3.0) (2026-09-21)
+
+
+### Features
+
+* upgrade flutter sdk to 3.47.5 and adopt dart_husky ([#16](https://github.com/moulibheemaneti/mb_contact_form/issues/16)) ([fc81945](https://github.com/moulibheemaneti/mb_contact_form/commit/fc81945083c701232f1d0bab230432bae250b832))
+
 ## [1.2.0](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.1.4...mb_contact_form-v1.2.0) (2026-08-21)
 
 
