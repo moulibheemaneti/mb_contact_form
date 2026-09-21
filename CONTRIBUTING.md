@@ -59,7 +59,7 @@ flutter test
 
 ## Making a change
 
-1. Fork the repo and create a branch from `main`.
+1. Fork the repo and create a branch from `master`.
 2. Make your changes and add or update tests as needed.
 3. Run `dart format .` and `flutter analyze` — both must pass cleanly.
 4. Run `flutter test` — all tests must pass.
