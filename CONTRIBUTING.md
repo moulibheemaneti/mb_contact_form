@@ -30,6 +30,27 @@ fix: handle null email field gracefully
 docs: update widget usage example
 ```
 
+## Pre-commit hooks
+
+This repo uses [`dart_husky`](https://pub.dev/packages/dart_husky). Install the hooks once after cloning:
+
+```sh
+dart run dart_husky install
+```
+
+On every commit the following run automatically:
+
+| Hook | Command |
+|---|---|
+| `format` | `dart format --set-exit-if-changed .` |
+| `analyze` | `flutter analyze .` |
+
+The commit message is also checked against the Conventional Commits types listed above.
+
+There is no `test` hook yet because this package has no `test/` directory — add one to `dart_husky.yaml` once tests exist.
+
+If any hook fails, the commit is blocked. Fix the issue and re-stage — don't `--no-verify`.
+
 ## Running tests
 
 ```sh
@@ -38,7 +59,7 @@ flutter test
 
 ## Making a change
 
-1. Fork the repo and create a branch from `main`.
+1. Fork the repo and create a branch from `master`.
 2. Make your changes and add or update tests as needed.
 3. Run `dart format .` and `flutter analyze` — both must pass cleanly.
 4. Run `flutter test` — all tests must pass.
