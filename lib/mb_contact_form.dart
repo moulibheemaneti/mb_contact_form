@@ -4,7 +4,6 @@
 library;
 
 import 'package:flutter/material.dart';
-import 'package:mb_button/mb_button.dart';
 import 'package:url_launcher/url_launcher.dart';
 
 /// [MBContactForm] is a [StatefulWidget].
@@ -288,12 +287,24 @@ class _MBContactFormState extends State<MBContactForm> {
                 ),
 
                 // Submit button
-                MBButton(
-                  isIconButton: true,
-                  elevation: 0,
-                  roundness: 10,
-                  text: 'Submit',
-                  onTapFunction: () {
+                ElevatedButton.icon(
+                  icon: const Icon(Icons.send),
+                  label: const Text(
+                    'Submit',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                      fontWeight: FontWeight.w500,
+                    ),
+                  ),
+                  style: ElevatedButton.styleFrom(
+                    elevation: 0,
+                    backgroundColor: Colors.blue,
+                    foregroundColor: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(10),
+                    ),
+                  ),
+                  onPressed: () {
                     if (_formKey.currentState!.validate()) {
                       _formKey.currentState!.save();
                       setState(() {
