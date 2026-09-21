@@ -4,6 +4,13 @@
 
 ## Current release
 
+## [1.3.1](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.3.0...mb_contact_form-v1.3.1) (2026-09-21)
+
+
+### Bug Fixes
+
+* replace discontinued mb_button with flutter's ElevatedButton ([#18](https://github.com/moulibheemaneti/mb_contact_form/issues/18)) ([ebf7055](https://github.com/moulibheemaneti/mb_contact_form/commit/ebf7055d99c27e1e986995221f264cf8e3d40b91))
+
 ## [1.3.0](https://github.com/moulibheemaneti/mb_contact_form/compare/mb_contact_form-v1.2.0...mb_contact_form-v1.3.0) (2026-09-21)
 
 
