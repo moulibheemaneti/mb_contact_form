@@ -1,0 +1,21 @@
+dart_husky:
+  verbose: true
+
+pre-commit:
+  commands:
+    format:
+      run: dart format --set-exit-if-changed .
+      glob: '**/*.dart'
+    analyze:
+      run: flutter analyze .
+      glob: '**/*.dart'
+    # No `test` command: this package has no test/ directory yet, and
+    # `flutter test` exits 1 when there is none, which would block every
+    # commit. Add it here once tests exist.
+
+commit-msg:
+  commands:
+    conventional:
+      preset: conventional
+      types:
+        append: [wip, release]

@@ -24,6 +24,7 @@ dependencies:
 
 dev_dependencies:
   flutter_lints: ^6.0.0
+  dart_husky: ^1.9.1
 
 flutter:
   uses-material-design: true
