@@ -126,12 +126,17 @@ class _MBContactFormState extends State<MBContactForm> {
 
   /// [_sendEmail] redirects to gmail app with the message and name
   /// entered by the user.
-  void _sendEmail(
-      {required String destEmail, required String body, required String name}) {
+  void _sendEmail({
+    required String destEmail,
+    required String body,
+    required String name,
+  }) {
     String? encodeQueryParameters(Map<String, String> params) {
       return params.entries
-          .map((e) =>
-              '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}')
+          .map(
+            (e) =>
+                '${Uri.encodeComponent(e.key)}=${Uri.encodeComponent(e.value)}',
+          )
           .join('&');
     }
 
@@ -152,12 +157,7 @@ class _MBContactFormState extends State<MBContactForm> {
   @override
   Widget build(BuildContext context) {
     return SingleChildScrollView(
-      padding: const EdgeInsets.only(
-        left: 32,
-        right: 32,
-        top: 32,
-        bottom: 32,
-      ),
+      padding: const EdgeInsets.only(left: 32, right: 32, top: 32, bottom: 32),
 
       /// Contact Form
       child: Form(
@@ -165,9 +165,7 @@ class _MBContactFormState extends State<MBContactForm> {
         child: Card(
           elevation: 3,
           shape: RoundedRectangleBorder(
-            borderRadius: BorderRadius.circular(
-              20,
-            ),
+            borderRadius: BorderRadius.circular(20),
           ),
           child: Padding(
             padding: const EdgeInsets.only(
@@ -191,9 +189,7 @@ class _MBContactFormState extends State<MBContactForm> {
                       )
                     : Container(),
 
-                const SizedBox(
-                  height: 32,
-                ),
+                const SizedBox(height: 32),
                 // Name Field
                 TextFormField(
                   controller: _nameEditingController,
@@ -221,9 +217,7 @@ class _MBContactFormState extends State<MBContactForm> {
                   ),
                 ),
 
-                const SizedBox(
-                  height: 32,
-                ),
+                const SizedBox(height: 32),
 
                 // Email Field
                 TextFormField(
@@ -251,9 +245,7 @@ class _MBContactFormState extends State<MBContactForm> {
                     border: const OutlineInputBorder(),
                   ),
                 ),
-                const SizedBox(
-                  height: 32,
-                ),
+                const SizedBox(height: 32),
 
                 // Message or Feedback Field
                 TextFormField(
@@ -282,9 +274,7 @@ class _MBContactFormState extends State<MBContactForm> {
                     border: const OutlineInputBorder(),
                   ),
                 ),
-                const SizedBox(
-                  height: 32,
-                ),
+                const SizedBox(height: 32),
 
                 // Submit button
                 ElevatedButton.icon(
