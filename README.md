@@ -33,7 +33,7 @@ Add to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  mb_contact_form: ^1.0.2
+  mb_contact_form: ^2.0.0
 ```
 
 Then run:
@@ -57,6 +57,31 @@ MBContactForm(
 ```
 
 Place it anywhere in your widget tree — inside a `Scaffold`, a `Column`, a modal sheet, wherever fits.
+
+---
+
+## Requirements
+
+From 2.0.0, `mb_contact_form` is built on [`material_ui`](https://pub.dev/packages/material_ui), the standalone Material library that replaces `package:flutter/material.dart`. It needs Flutter 3.47.0 or newer, and your app must use `material_ui` as well. An app still on `package:flutter/material.dart` fails at runtime with errors such as `No MaterialLocalizations found`.
+
+Import Material from `material_ui` in your app:
+
+```dart
+import 'package:material_ui/material_ui.dart';
+```
+
+### Migrating from 1.x
+
+1. Upgrade to Flutter 3.47.0 or newer.
+2. Move your app to `material_ui`. The official fix adds the dependency and rewrites your `package:flutter/material.dart` imports:
+
+   ```sh
+   dart fix --apply --code=migrate_design_widgets
+   ```
+
+3. The `MBContactForm` API is unchanged. Its fields are `material_ui` widgets, so they need a `material_ui` `MaterialApp` (or `Material`) above them.
+
+If your app has to stay on `package:flutter/material.dart` for now, keep using `mb_contact_form` 1.x.
 
 ---
 
